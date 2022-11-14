@@ -1,4 +1,4 @@
-# Minimalistic Dictionary
+# Minimalistic Encrypter
 This web-site to encrypt and decrypt your secreet text
 
 ## Hosting

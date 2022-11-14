@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Minimalistic-Encrypter
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container w-50" id="encrypter">
+        <label class="form-label text-center fw-bold fs-4">Encrypter</label>
+        <div class=" border border-2 rounded p-3">
+            <div class="mb-3 pt-3">
+                <label class="form-label mb-3">Text to encrypt</label>
+                <textarea class="form-control mb-3" maxlength="512" placeholder="Enter a text to encrypt" id="input_string"
+                    rows="3"></textarea>
+            </div>
+            <div class="row g-3 mb-0">
+                <div class="col-auto">
+                    <label class="col-form-label">Key</label>
+                </div>
+                <div class="col-auto">
+                    <input class="form-control" type="number" style="width: 4.2em;" id="input_key" placeholder="key" min="-94" max="94">
+                </div>
+            </div>
+            <div id="error_div" class="d-none">
+                <label id="error_label" class="form-label text-warning m-0 text-capitalize">error</label>
+            </div>
+            <div id="result_div" class="d-none">
+                <label class="form-label pt-3">Encrypted text</label>
+                <span class="border border-2 rounded row m-0">
+                    <label id="result_label" class="form-label text-break">Test text</label>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

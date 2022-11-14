@@ -60,19 +60,17 @@ def lmit_code(num, limits=[32, 126]):
 
 def limit_key(key, limit=94):
     div = key / (limit)
-    # print(div)
     if div < -1 or div > 1:
-        # print(int(div))
         key -= int(div) * limit
     return key
 
 
-def initial_error_check(text: str, key: str, max_len=128):
+def initial_error_check(text: str, key: str, max_len=512):
     error_message = ""
     if not text:
         error_message = "empty string"
     elif len(text) > max_len:
-        error_message = f"word is too long. Max {max_len} characters"
+        error_message = f"text is too long. Max {max_len} characters"
     elif not key.lstrip("-").isdigit():
         error_message = "Incorrect key"
     else:
